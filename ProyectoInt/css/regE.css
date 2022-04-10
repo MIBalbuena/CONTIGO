@@ -1,0 +1,93 @@
+ol {
+  list-style: none;
+  display:grid;
+  grid-template-columns: repeat(10, 1fr);
+
+}
+div {
+  text-align:center;
+
+}
+h1{
+  text-align: center;
+  
+  font-family: "Patrick Hand"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; 
+}
+h6{
+  text-align: right; 
+  font-family: "Patrick Hand"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; 
+}
+
+h1 {
+  background-image: linear-gradient(
+      to right,
+      orangered,
+      orange,
+      gold,
+      lightgreen,
+      cyan,
+      dodgerblue,
+      mediumpurple,
+      hotpink,
+      orangered);
+  background-size: 110vw;
+}
+h1 {
+  animation: sliding 30s linear infinite;
+}
+
+@keyframes sliding {
+  to {
+      background-position: -2000vw;
+  }
+}
+h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*
+.btn {
+    
+  position: static;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #2196f3;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-decoration: none ;
+  font-size: small;
+  overflow: hidden;
+  transition: 0.2s;
+}
+/*iluminacion del boton */
+/*
+.btn:hover{
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3, 0 0 80px
+  #2196f3;
+  transition-delay:.0s;
+}*/
+.yellow-color {
+    
+  position: static;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #2196f3;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-decoration: none ;
+  font-size: small;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.yellow-color:hover{
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3, 0 0 80px
+  #2196f3;
+  transition-delay:.0s;
+}
