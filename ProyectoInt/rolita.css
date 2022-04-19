@@ -1,0 +1,96 @@
+/*Modificacion de los div*/
+div#TituloRolita{
+    float: right;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 30px;
+    
+}
+
+div#TituloFrase{
+    float:left;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 30px;
+}
+div#muroFrase{
+    float:left;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 30px;
+}
+div#muroFrase2,imgUser{
+  float:right;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black ;
+  border-radius: 30px;
+}
+div#muroFrase3{
+  float:left;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black ;
+  border-radius: 30px;
+}
+/*Modificacion de los titulos y sus estilos*/
+h1{
+    text-align: center;
+    
+    font-family: "Patrick Hand"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; 
+  
+}
+
+h1 {
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+    background-size: 110vw;
+  }
+  h1 {
+    animation: sliding 30s linear infinite;
+  }
+  
+  @keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+  }
+  h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+/*Modificacion de las imagenes de usuario*/  
+
+article .container-ms img {
+    margin-top: 0px;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+
+footer #FrasesEnCarrusel{
+  margin-top:auto;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black ;
+  border-radius: 30px;
+}
