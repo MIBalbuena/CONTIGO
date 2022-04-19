@@ -6,53 +6,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginaInicio.css">
 </head>
 
 <body>
-    <header>
-        <nav  class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio <i
-                                    class="bi bi-house-door-fill" style="font-size: 1.2rem;"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes somos <i class="bi bi-person-hearts"
-                                    style="font-size: 1.2rem;"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto <i class="bi bi-envelope-paper-heart-fill"
-                                    style="font-size: 1.2rem;"></i></a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Login <i class="bi bi-box-arrow-in-right"
-                                    style="font-size: 1.2rem;"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Registrate <i class="bi bi-person-heart"
-                                    style="font-size: 1.2rem;"></i></a>
-                        </li>
-                    </ul>
+  <header>
+    <nav  class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio <i
+                                class="bi bi-house-door-fill" style="font-size: 1.2rem;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quienes somos <i class="bi bi-person-hearts"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto <i class="bi bi-envelope-paper-heart-fill"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="iniciarSesion.html">Login <i class="bi bi-box-arrow-in-right"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrate <i class="bi bi-person-heart"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                </ul>
 
-                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
+    <main>
+        <!-- Carrusel de inicio -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe class="d-block w-100" width="560" height="315" src="https://www.youtube.com/embed/Vu6xM229q9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe class="d-block w-100" width="560" height="315" src="https://www.youtube.com/embed/Vf7N6ADsmKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe class="d-block w-100" width="560" height="315" src="https://www.youtube.com/embed/KAwf5NBXdYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+        <!-- Iconos auoredirigibles y descripcion partes de la página -->
+        <div class="container marketing mt-3 mb-5">
+          <!-- Columnas de texto debajo del carrusel -->
+          <div class="iconoslink">
+          <div class="row">
+            <div class="col-lg-3 text-center">
+                <svg class="rounded-circle" width="140" height="140"><rect width="100%" height="100%" fill="#ffeb3b"></rect></svg>
+              <h2>Quienes Somos</h2>
+              <p>Si estas interesad@ en saber un sobre Contigo y sus creadores, esta parte es la que buscas.</p>
+              <button><a class="btn" href="#"> Nosotros »</a></button>
+            </div>
+            <div class="col-lg-3 text-center">
+                <svg class="rounded-circle" width="140" height="140"><rect width="100%" height="100%" fill="#ffeb3b"></rect></svg>
+              <h2>Contacto</h2>
+              <p>Tienes preguntas o sugerencias sobre nuestro trabajo. No dudes en escribirnos, nos encantará leerte.</p>
+              <button><a class="btn" href="#"> Contactanos »</a></button>
+            </div>
+            <div class="col-lg-3 text-center">
+                <svg class="rounded-circle" width="140" height="140"><rect width="100%" height="100%" fill="#ffeb3b"></rect></svg>
+              <h2>Inicia Sesión</h2>
+              <p>Gracias por regresar, eperamos sigas disfrutando CONTIGO tanto como nosotros.</p>
+              <button><a class="btn" href="#"> Iniciar Sesión »</a></button>
+            </div>
+            <div class="col-lg-3 text-center">
+                <svg class="rounded-circle" width="140" height="140"><rect width="100%" height="100%" fill="#ffeb3b"></rect></svg>
+                <h2>Registrate</h2>
+                <p>Si aún no has creado tu cuenta en CONTIGO, únete y descubre lo que podemos ofrecerte!</p>
+                <button><a class="btn" href="#"> Registrarme »</a></button>
+              </div>
+          </div>
+        </div>
+      
+          <!-- Funcionalidades de contigo -->
+          <hr class="featurette-divider">
+          <div class="row featurette d-flex align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Registro de Emociones</h2>
+              <p class="lead">Podrás registrar tu emoción diariamente (Tranquil@ te ayudaremos a identificar tue moción d forma clara basandonos en la rueda de las emociones de Robert Plutchik) y además podrás llevar un control mensual.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300"><rect width="100%" height="100%" fill="#eee"></svg>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <div class="row featurette d-flex align-items-center">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Comparte tu Sentir</h2>
+              <p class="lead">Algunas veces solo necesitamos desahogarnos para tener una visión más clara, así que podrás compartir de manera anónima o con tu usuario (tu decides) lo que sientas, pienses o estes viviendo.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300"><rect width="100%" height="100%" fill="#eee"></svg>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <div class="row featurette d-flex align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Convive</h2>
+              <p class="lead">Si tienes alguna frase o canción que te encanta y además te ayuda en ciertos momentos, y quieres compartirla, o quizás te gustaría leer las recomendaciones de alguien más. Esto podrás hacerlo dentro de nuestro apartado de frasesillas y rolitas.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300"><rect width="100%" height="100%" fill="#eee"></svg>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <div class="row featurette d-flex align-items-center">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Expertos</h2>
+              <p class="lead">Estamos consientes de que la ayuda emocional y psicológica debe ser brindada solo por expertos es por eso que te brindamos este espacio para que si lo decides puedas contactar con alguno.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300"><rect width="100%" height="100%" fill="#eee"></svg>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <!-- FIN de Funcionalidades de contigo -->
+        </div>
+      </main>
 
-
-
+        <!-- FOOTER -->
+        <footer>
+          <div class="container">
+          <p class="float-end"><a href="#" id="linkf"> Back to top</a></p>
+          <p>2022 Thunder Devs</p>
+        </div>
+        </footer>
 
     <!-- Link de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
