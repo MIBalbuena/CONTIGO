@@ -3,6 +3,12 @@ nav {
     background-color: #2A9D8F;
 }
 
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+}
+
 /* Background */
 
 body {
@@ -13,3 +19,23 @@ body {
 
 }
 
+/* Botones */
+
+/* Texto descriptivo de funcionalidades */
+.lead{
+    text-align: justify;
+}
+
+.iconoslink{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#linkf{
+    color: #ffeb3b;
+}
+
+#myCarousel{
+    margin-top: 2rem;
+    height:30rem;
+}
