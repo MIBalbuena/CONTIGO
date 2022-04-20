@@ -16,27 +16,36 @@ body {
 }
 
 /* Estilo del fromulario */
-#formulario {
-    width: 40rem;
-    height: 25rem;
+#cardLogIn {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
 }
-
-#container1{
-    width: 35rem;  
+#passwordHelpBlock{
+    color:rgb(49, 49, 49)
 }
+
+
+/* Ojo hide and show password */
+form i {
+    margin-left: 34rem;
+    margin-top: 2.5rem;
+    z-index: 200;
+    position: absolute;
+    font-size: large;
+    font-weight: bolder;
+    color: #89078d;
+    cursor: pointer;}
 
 
 /* Estilo del botón de inicio de sesión */
 #botonInicioSesion{
     text-decoration: none;
-    position: absolute;
+    position: relative;
+    top: 3%;
     border: none;
     font-size: 14px;
     font-family: inherit;
-    color:black;
-    font-weight: bolder;
+    color: black;
     width: 9em;
     height: 3em;
     line-height: 2em;
@@ -84,3 +93,12 @@ body {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }
 
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+}
+#linkf{
+    color: #ffeb3b;
+}
