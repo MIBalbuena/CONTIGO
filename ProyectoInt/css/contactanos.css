@@ -12,3 +12,18 @@ body {
     background-size: cover;
 
 }
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+
+th, td{
+    color:white;
+}
+
+.background{
+    background-color: transparent; 
+}
