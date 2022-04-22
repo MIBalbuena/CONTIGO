@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    
+    <!--regE.css-->
+    <link href="css/regE.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav  class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio <i
+                                    class="bi bi-house-door-fill" style="font-size: 1.2rem;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quienes somos <i class="bi bi-person-hearts"
+                                    style="font-size: 1.2rem;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto <i class="bi bi-envelope-paper-heart-fill"
+                                    style="font-size: 1.2rem;"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login <i class="bi bi-box-arrow-in-right"
+                                    style="font-size: 1.2rem;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registrate <i class="bi bi-person-heart"
+                                    style="font-size: 1.2rem;"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-----------------------------------------Comienza Body, Registro de Emocion----------------------------------------------> 
+<div id="regE">
+        <div class="container-fluid">  <!--Aquí primera division para hacerlo responsive-->
+       
+                 <!--En este div, clase tiene mx para centrarlo, con automatico, w controla el ancho en 25,50,75,100,
+                    p para relleno va de 0 a 5, verticalmente lo agranda, 
+                    mt es una combinación, m es de margen, t es con respecto al top va de 0 a 5 entre el tope vertical,
+                    -->
+                 <div id="ventana1" class="mx-auto w-75 p-5 mt-5" style="background-color: rgba(255,255,255,.2)" >
+                   <!-- <table class="table table-hover">-->
+                     <h1>REGISTRO DE EMOCIONES</h1>
+                     <h6 >MARZO</h6>
+                     <ol>
+
+                        <!--
+                      <li><button type ="button" class="btn"><i class='fa fa-star yellow-color'style="font-size:20px;" >1</i></button></li>
+                      -->
+                     <li type="button" button value=" " onclick="verificarEmocion()"  id="S1" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                     <br>1</li>
+                     <li type="button" id="S2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                      <br>2</li>
+                      <li type="button" id="S3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                        <br>3</li>
+                        <li type="button" id="S4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                            <br>4</li>
+                            <li type="button" id="S5" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                <br>5</li>
+                                <li type="button" id="S6" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                    <br>6</li>
+                                    <li type="button" id="S7" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                        <br>7</li>
+                                        <li type="button" id="S8"data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                            <br>8</li>
+                                            <li type="button" id="S9"data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                <br>9</li>
+                                                <li type="button" id="S10" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                    <br>10</li>
+                                                    <li type="button" id="S11" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                        <br>11</li>
+                                                        <li type="button" id="S12" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                            <br>12</li>
+                                                            <li type="button" id="S13" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                <br>13</li>
+                                                                <li type="button" id="S14" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                    <br>14</li>
+                                                                    <li type="button" id="S15" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                        <br>15</li>
+                                                                        <li type="button" id="S16" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                            <br>16</li>
+                                                                            <li type="button" id="S17" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                <br>17</li>
+                                                                                <li type="button" id="S18" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                    <br>18</li>
+                                                                                    <li type="button" id="S19" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                        <br>19</li>
+                                                                                        <li type="button" id="S20" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                            <br>20</li>
+                                                                                            <li type="button" id="S21" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                <br>21</li>
+                                                                                                <li type="button" id="S22" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                    <br>22</li>
+                                                                                                    <li type="button" id="S23" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                        <br>23</li>
+                                                                                                        <li type="button" id="S24" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                            <br>24</li>
+                                                                                                            <li type="button" id="S25" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                <br>25</li>
+                                                                                                                <li type="button" id="S26" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                    <br>26</li>
+                                                                                                                    <li type="button" id="S27" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                        <br>27</li>
+                                                                                                                        <li type="button" id="S28" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                            <br>28</li>
+                                                                                                                            <li type="button" id="S29" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                                <br>29</li>
+                                                                                                                                <li type="button" id="S30" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                                    <br>30</li>
+                                                                                                                                    <li type="button" id="S31" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class='fa fa-star star-color'style="font-size:30px;">
+                                                                                                                                        <br>31</li>
+                    </ol>    
+                </div>
+                <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" Patrick Hand="staticBackdropLabel" Patrick Hand="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 800px;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Codicos de emociones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/CE.png" alt="Img_CodigoDeColor" style="width: 500px;">
+            <form class="formulario">
+                <div class="checkbox">
+                    <h2>Elige tu emocion =)</h2>
+                    <input type="checkbox" name="emocion1" id="Ira">
+                    <label for="Ira">Ira</label>
+                    <input type="checkbox" name="emocion2" id="Felicidad">
+                    <label for="Felicidad">Felicidad</label>
+                    <input type="checkbox" name="emocion3" id="Tristeza">
+                    <label for="Tristeza">Tristeza</label>
+                    <input type="checkbox" name="emocion4" id="Sorpresa">
+                    <label for="Sorpresa">Sorpresa</label>
+                    <input type="checkbox" name="emocion5" id="Miedo">
+                    <label for="Miedo">Miedo</label>
+                    <input type="checkbox" name="emocion6" id="Disgusto">
+                    <label for="Disgusto">Disgusto</label>
+
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Entiendo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+        
+        
+        
+        </div>
+
+
+
+
+</div>
+
+
+
+    <script src="regE.js"></script>
+    <!--Link de Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Link de Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</body>
+
+</html>
