@@ -13,9 +13,20 @@ body {
 
 }
 
-#cardRegistro{
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+
+th, td{
+    color:white;
+
+}
+
+.background{
+    background-color: transparent; 
 }
 
 /* Estilo del FOOTER */
@@ -23,7 +34,11 @@ footer {
     background-color: #279286;
     height: 3rem;
     color: white;
-}
-#linkf{
-    color: #ffeb3b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    
+
+
 }

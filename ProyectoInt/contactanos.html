@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +14,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -28,15 +28,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio <i
+                            <a class="nav-link" href="index.html">Inicio <i
                                     class="bi bi-house-door-fill" style="font-size: 1.2rem;"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="acercaDe.html">Quienes somos <i class="bi bi-person-hearts"
+                            <a class="nav-link" href="quienesSomos.html">Quienes somos <i class="bi bi-person-hearts"
                                     style="font-size: 1.2rem;"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contactanos.html">Contacto <i
+                            <a class="nav-link active" aria-current="page" href="contactanos.html">Contacto <i
                                     class="bi bi-envelope-paper-heart-fill" style="font-size: 1.2rem;"></i></a>
                         </li>
                     </ul>
@@ -46,7 +46,7 @@
                                     style="font-size: 1.2rem;"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registrate.html">Registrate <i class="bi bi-person-heart"
+                            <a class="nav-link" href="registro.html">Registrate <i class="bi bi-person-heart"
                                     style="font-size: 1.2rem;"></i></a>
                         </li>
                     </ul>
@@ -55,90 +55,57 @@
             </div>
         </nav>
     </header>
-    <br>
+
     <main>
+        <br>
+    <!-- Inicio formulario de mensaje -->
         <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <h1>Contactanos...</h1>
-                </div>
-            </div>
-            <br>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="bi bi-telephone-inbound d-flex justify-content-center"
-                                style="font-size: 5rem;"></i>
-                            <br>
-                            <h5 class="card-title d-flex justify-content-center">+52 000 000 0000</h5>
-                            <p class="card-text d-flex justify-content-center">Nos puedes hablar cuando gustes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="bi bi-map d-flex justify-content-center" style="font-size: 5rem;"></i>
-                            <br>
-                            <h5 class="card-title d-flex justify-content-center">Inserte ubicacion</h5>
-                            <p class="card-text d-flex justify-content-center">Esta es nuestra ubicacion</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="bi bi-envelope-heart d-flex justify-content-center" style="font-size: 5rem;"></i>
-                            <br>
-                            <h5 class="card-title d-flex justify-content-center">Inserte email</h5>
-                            <p class="card-text d-flex justify-content-center">Mandanos un correo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <hr>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <h1>Dejanos un mensaje...</h1>
-                </div>
-            </div>
             <br>
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8">
                     <div class="card" id="cardMensaje">
                         <div class="card-body">
                             <div class="container">
+                                <br>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center">
+                                        <h1 class="tituloMensaje">Dejanos un mensaje!</h1>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
                                 <div class="row">
                                     <div class="col">
                                         <form>
                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1">Nombre</label>
                                                 <input type="text" class="form-control" id="exampleFormControlInput1"
-                                                    placeholder="Tu nombre aquí">
+                                                    placeholder="Tu nombre aquí" minlength="2" pattern="^[A-Za-z ]+$" title="Solo puedes usar letras y espacios en este campo" required="" />
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1">Email</label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                    placeholder="direccion@ejemplo.com">
+                                                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+                      placeholder="tucorreo@correo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      title="Recuerda que el formato a seguir es: tucorreo@correo.com" required="" />
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="exampleFormControlInput1">Telefono</label>
-                                                <input type="number" class="form-control" id="exampleFormControlInput1"
-                                                    placeholder="Numero de telefono">
+                                                <label for="exampleFormControlInput1">Teléfono</label>
+                                                <input type="number" class="form-control numero" id="InputPhone"
+                                                    placeholder="Numero de teléfono" pattern="^\d{12,12}" title="Este campo solo permite el uso de números">
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Mensaje</label>
                                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                                    placeholder="¡Queremos saber tus ideas!"></textarea>
+                                                    placeholder="¡Queremos saber tus ideas!" minlength="5" maxlength="500" required="" ></textarea>
                                             </div>
+                                            <br>
                                             <div class="container">
                                                 <div class="col-md-12 text-center">
-                                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                                    <button id="botonContactanos" type="submit" class="btn btn-primary" style="font-weight: bolder; font-size: 1rem">ENVIAR</button>
+                                                    <br>
                                                 </div>
                                             </div>
                                         </form>
@@ -147,19 +114,66 @@
                             </div>
                         </div>
                     </div>
+                    <br>
+                </div>
+    <!-- Fin formulario de mensaje -->
+
+<!-- Inicio elementos informativos -->
+<div class="col-md-4">
+    <div class="row">
+        <div class="col">
+            <div class="card h-100" id="telefono">
+                <div class="card-body">
+                    <i id="iconoTelefono" class="bi bi-telephone-inbound d-flex justify-content-center"
+                        style="font-size: 3rem;"></i>
+                    <br>
+                    <h5 class="card-title d-flex justify-content-center">+52 84 86 33 73 38</h5>
+                    <p class="card-text d-flex justify-content-center">Nos puedes hablar cuando gustes</p>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     <br>
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-            <p class="float-end"><a href="#" id="linkf"> Back to top</a></p>
-            <p>2022 Thunder Devs</p>
+    <div class="row">
+        <div class="col">
+            <div class="card h-100" id="ubicacion">
+                <div class="card-body">
+                    <i id="iconoUbicacion" class="bi bi-map d-flex justify-content-center" style="font-size: 3rem;"></i>
+                    <br>
+                    <a id="direccion" href="https://www.google.com.mx/maps/place/C.+Paris+210,+Del+Carmen,+Coyoac%C3%A1n,+04100+Ciudad+de+M%C3%A9xico,+CDMX/@19.35364,-99.1642931,19z/data=!3m1!4b1!4m5!3m4!1s0x85d1ffc3bfadb54b:0x17a5098f2a1d45af!8m2!3d19.3536387!4d-99.1637459" target="_blank"><h5 class="card-title d-flex justify-content-center">C. Paris 210, Del Carmen, Coyoacán, 04100, Ciudad de México, CDMX</h5></a>
+                    <p class="card-text d-flex justify-content-center">Esta es nuestra ubicacion</p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <br>
 
+    <div class="row">
+        <div class="col">
+            <div class="card h-100" id="correo">
+                <div class="card-body">
+                    <i id="iconoCorreo" class="bi bi-envelope-heart d-flex justify-content-center" style="font-size: 3rem;"></i>
+                    <br>
+                    <h5 class="card-title d-flex justify-content-center">thunderdevs@gmail.com</h5>
+                    <p class="card-text d-flex justify-content-center">Mandanos un correo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Fin elementos informativos -->
+    </main>
 
+<!-- FOOTER -->
+<footer class="footer mt-auto py-3">
+    <div class="container">
+      <p class="float-end"><a href="#" id="linkf"> Back to top</a></p>
+      <p>2022 Thunder Devs</p>
+    </div>
+  </footer>
+    
     <!-- Link de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -169,7 +183,8 @@
         crossorigin="anonymous"></script>
     <!-- Link de Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
+    <!-- Link de js -->
+    <script src="js/contactanos.js"></script>
 </body>
 
 </html>

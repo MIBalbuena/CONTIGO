@@ -1,19 +1,16 @@
-/* Pagina de Inicio */
+/* Pagina de Registro */
 
-/* Estilo para toda la página tipo de fuente y color */
+/* Estilo para toda la página tipo de fuente */
 *{
-    color: white;
-    font-family: "Patrick Hand"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px;
+    font-family: "Patrick Hand"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; 
 }
 
-h2{
-    color:#b9e9b3;
+h1{
     font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
 }
 
 /* Estilo Navbar */
 nav {
-    color:white;
     background-color: #2A9D8F;
 }
 
@@ -26,22 +23,17 @@ body {
     background-size: cover;
 }
 
-/* Texto descriptivo de funcionalidades */
-.lead{
-    text-align: justify;
+/* Estilo del fromulario */
+#cardRegistro {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+#passwordHelpBlock{
+    color:rgb(49, 49, 49)
 }
 
-.iconoslink{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-#iconosAutodirigibles{
-    color:#ffeb3b;
-}
-
-/* Estilo Botones */
-.btnIconos{
+/* Estilo del botón de registro */
+#botonRegistro{
     text-decoration: none;
     position: relative;
     top: 3%;
@@ -49,9 +41,8 @@ body {
     font-size: 14px;
     font-family: inherit;
     color: black;
-    width: 12em;
-    height: 4em;
-    line-height: 2em;
+    width: 8rem;
+    height: 2rem;
     text-align: center;
     background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
     background-size: 300%;
@@ -59,7 +50,7 @@ body {
     z-index: 1;
 }
 
-.btnIconos:hover{
+#botonRegistro:hover{
     animation: ani 8s linear infinite;
     border: none;
 }
@@ -74,7 +65,7 @@ body {
     }
    }
 
-.btnIconos:before{
+#botonRegistro:before{
     content: '';
  position: absolute;
  top: -5px;
@@ -88,13 +79,14 @@ body {
  transition: 1s;
 }
 
-.btnIconos:hover::before{
+#botonRegistro:hover::before{
     filter: blur(20px);
 }
 
-.btnIconos:active{
+#botonRegistro:active{
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }
+
 
 /* Estilo del FOOTER */
 footer {
