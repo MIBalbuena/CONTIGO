@@ -13,10 +13,36 @@ body {
 
 }
 
-
-
-
 .rainbow-text {
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+    background-size: 110vw;
+  }
+  h1 {
+    animation: sliding 30s linear infinite;
+  }
+  
+  @keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+  }
+  h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+ .rainbow{
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -88,4 +114,10 @@ body {
 	display: table-row-group;
 }
 
+
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
 
