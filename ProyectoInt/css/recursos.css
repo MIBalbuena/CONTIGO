@@ -22,8 +22,23 @@ body {
 
 th, td{
     color:white;
+
 }
 
 .background{
     background-color: transparent; 
+}
+
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    
+
+
 }
