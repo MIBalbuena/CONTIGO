@@ -35,6 +35,14 @@ body {
     color:rgb(49, 49, 49)
 }
 
+/* Ojo hide and show password */
+form i {
+    z-index: 200;
+    font-size: large;
+    font-weight: bolder;
+    color: #89078d;
+    cursor: pointer;}
+
 /* Estilo del botón de registro */
 #botonRegistro{
     text-decoration: none;

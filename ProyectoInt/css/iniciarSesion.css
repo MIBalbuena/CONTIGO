@@ -36,15 +36,11 @@ body {
 
 /* Ojo hide and show password */
 form i {
-    margin-left: 23rem;
-    margin-top: 2.5rem;
     z-index: 200;
-    position: absolute;
     font-size: large;
     font-weight: bolder;
     color: #89078d;
     cursor: pointer;}
-
 
 /* Estilo del botón de inicio de sesión */
 #botonInicioSesion{
