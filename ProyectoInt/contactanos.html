@@ -136,16 +136,35 @@
     <br>
     <div class="row">
         <div class="col">
-            <div class="card h-100" id="ubicacion">
+            <div class="card h-100" id="ubicacion" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <div class="card-body">
                     <i class="colorIconos bi bi-map d-flex justify-content-center" style="font-size: 3rem;"></i>
                     <br>
-                    <a id="direccion" href="https://www.google.com.mx/maps/place/C.+Paris+210,+Del+Carmen,+Coyoac%C3%A1n,+04100+Ciudad+de+M%C3%A9xico,+CDMX/@19.35364,-99.1642931,19z/data=!3m1!4b1!4m5!3m4!1s0x85d1ffc3bfadb54b:0x17a5098f2a1d45af!8m2!3d19.3536387!4d-99.1637459" target="_blank"><h5 class="card-title d-flex justify-content-center">C. Paris 210, Del Carmen, Coyoacán, 04100, Ciudad de México, CDMX</h5></a>
+                   <a id="direccion"><h5 class="card-title d-flex justify-content-center">C. Paris 210, Del Carmen, Coyoacán, 04100, Ciudad de México, CDMX</h5></a>
                     <p class="card-text d-flex justify-content-center">Esta es nuestra ubicación.</p>
                 </div>
             </div>
         </div>
     </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div id="ventanaModalContacto" class="modal-content">
+        <div>
+        <br>
+          <button id="botonCloseModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.0895386672413!2d-99.1637459!3d19.353638699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc3bfadb54b%3A0x17a5098f2a1d45af!2sC.%20Paris%20210%2C%20Del%20Carmen%2C%20Coyoac%C3%A1n%2C%2004100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1651525364285!5m2!1sen!2smx" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+          <button id="botonModal"  type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-weight: bolder; font-size: 1rem">CERRAR</button> <br> <br>
+        </div>
+      </div>
+    </div>
+  </div>
     <br>
 
     <div class="row">
