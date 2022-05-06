@@ -18,11 +18,12 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav  class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a  style="color:aliceblue" class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="publicacionesComunidad.html"><img src="img/Logo contigo blanco.png"
+                        class="img-fluid d-flex align-items-center" width="100px" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -31,25 +32,35 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a style="color:aliceblue" class="nav-link active" aria-current="page" href="#">Inicio <i
+                            <a class="nav-link" aria-current="page" href="publicacionesComunidad.html">Inicio <i
                                     class="bi bi-house-door-fill" style="font-size: 1.2rem;"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a style="color:aliceblue" class="nav-link" href="#">Quienes somos <i class="bi bi-person-hearts"
-                                    style="font-size: 1.2rem;"></i></a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Actividades <i class="bi bi-box2-heart" style="font-size: 1.2rem;"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="publicacionUser.html">Publique <i
+                                            class="bi bi-pencil-square" style="font-size: 1.2rem;"></i></a></li>
+                                <li><a class="dropdown-item disabled" href="#">Emoción <i class="bi bi-postcard-heart"
+                                            style="font-size: 1.2rem;"></i></a></li>
+                                <li><a class="dropdown-item disabled" href="#">Descubre <i class="bi bi-people"
+                                            style="font-size: 1.2rem;"></i></a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a style="color:aliceblue" class="nav-link" href="#">Contacto <i class="bi bi-envelope-paper-heart-fill"
+                            <a class="nav-link" href="recursos.html">Expertos <i class="bi bi-person-hearts"
                                     style="font-size: 1.2rem;"></i></a>
                         </li>
                     </ul>
                     <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a  style="color:aliceblue" class="nav-link" href="#">Login <i class="bi bi-box-arrow-in-right"
+                            <a class="nav-link disabled" href="#">User Name <i class="bi bi-person-circle"
                                     style="font-size: 1.2rem;"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a style="color:aliceblue" class="nav-link" href="#">Registrate <i class="bi bi-person-heart"
+                            <a class="nav-link" href="../index.html">Cerrar Sesión <i class="bi bi-box-arrow-left"
                                     style="font-size: 1.2rem;"></i></a>
                         </li>
                     </ul>
@@ -58,28 +69,19 @@
             </div>
         </nav>
     </header>
-<<<<<<< HEAD:ProyectoInt/RED SOCIAL/recursos.html
 <!--Aquí termina nav bar-->
 
-
+<!--Tabla de recursos-->
 <main>
     <section>
 
             <div class="col d-flex justify-content-center">
                 <h1> Recursos...</h1>
             </div>
-=======
-
-    <div id="cardRegistro" class="card">
-        <div id="cardUser" class="card-body">
-      
-   <div id="demo1" class="demo"><center> <span id="highlight"> <h1 class="rainbow-text">EMOCIÓN REGISTRADA</h1> </span></center></div>
-   <center><i id="star" class="fa fa-star"></i></center>
->>>>>>> b26d2cb1781acc7002e86f1d93a3380c83a09513:ProyectoInt/registrodelaemoción.html
 
 
         </div>
-        <div class = "container table-hover table-responsive table-dark">
+        <div class = "container table-hover table-responsive table-dark" id="color">
          <table class="table">
              <thead>
                <tr>
@@ -100,43 +102,81 @@
                  <th scope="row">2</th>
                  <td>Sistema Nacional de Apoyo</td>
                  <td> Consejo Psicológico e Intervención en Crisis</td>
-                 <td>saptel.org.mx</td>
+                 <td><a href="http://saptel.org.mx" target="_blank">saptel.org.mx</a></td>
                </tr>
                <tr>
                  <th scope="row">3</th>
                  <td>Línea de Ayuda LOCATEL</td>
                  <td>El sistema de “Chat psicológico” brinda orientación, consejería y apoyo emocional en crisis.</td>
-                 <td>www.locatel.cdmx.gob.mx</td>
+                 <td><a href="http://www.locatel.cdmx.gob.mx" target="_blank">www.locatel.cdmx.gob.mx</a><br>Teléfono: 555 658 1111</td>
                </tr>
+               <tr>
+                <th scope="row">4</th>
+                <td>Consejo Ciudadano</td>
+                <td>Asesoría jurídica y atención psicológica gratuita por Teléfono y WhatsApp al público en general.</td>
+                <td>555 533 5533</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>CIJ. Integración Juvenil</td>
+                <td>Servicio telefónico de apoyo psicológico gratuito para jóvenes adictos.</td>
+                <td>Teléfono: 555 212 1212<br>
+                    Whatsapp 1: 557 518 5547<br>
+                    Whatsapp 2: 554 544 9743</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>CONAVIM</td>
+                <td>La Comisión Nacional para prevenir la Violencia contra las Mujeres brinda orientación legal y terapia psicológica gratuita, continua y confidencial.</td>
+                <td>555 209 8907 <br>555 209 8902</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Educatel</td>
+                <td>La Secretaría de Educación Pública (SEP), a través de Educatel, ofrece apoyo psicológico para la población que lo requiera, con el apoyo de instituciones educativas de todo el país.</td>
+                <td>55 3601 7599<br>800 288 66 88</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Medicina a Distancia</td>
+                <td>El Centro de Atención Telefónica de la Secretaria de Salud de la Ciudad de México, proporciona servicios de asesoría médica, nutricional y consulta psicológica gratuita.</td>
+                <td>555 132 0909<br>medicina.distancia@salud.df.gob.mx</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Línea de la vida</td>
+                <td>El Centro de Atención Ciudadana la Línea de la Vida de la Comisión Nacional contra las Adicciones también ofrece atención personalizada a la población sobre los problemas asociados al consumo de sustancias psicoactivas y de salud mental.</td>
+                <td>800 911 2000<br>mlalineadelavida@salud.gob.mx</td>
+              </tr>
              </tbody>
            </table>
         </div>
-<!--   <div id="demo1" class="demo"><center> <span id="highlight"> <h1 class="rainbow-text">DATOS DE AYUDA PROFESIONAL EXTERNA</h1> </span></center></div>
-   
-  </div>
-  <div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-center">
-            <h1>Recursos...</h1>
-        </div>--> 
 
-<<<<<<< HEAD:ProyectoInt/RED SOCIAL/recursos.html
 
-=======
-<!-- FOOTER -->
-<footer class="footer mt-auto py-3">
-    <div class="container">
-      <p class="float-end"><a href="#" id="linkf"> Back to top</a></p>
-      <p>2022 Thunder Devs</p>
-    </div>
-  </footer>
-    
->>>>>>> b26d2cb1781acc7002e86f1d93a3380c83a09513:ProyectoInt/registrodelaemoción.html
+
 
 
     </section>
 </main>
+<!--Aquí termina la tabla de recursos-->
  
+<!-- Modal Términos-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Disclaimer</h5>
+        </div>
+        <div class="modal-body">
+            Queremos ser enfáticos en que CONTIGO no es un seguimiento psicológico de ningún tipo y no lo consideramos un tratamiento para condiciones de la salud mental, sin embargo nos es grato el poder compartirles campañas y contactos que se especializan en ello.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -155,18 +195,17 @@
 
 </body>
 
+<!-- FOOTER -->
+<footer class="footer mt-auto py-3">
+    <div class="container">
+      <p class="float-end"><a href="#" class="linkf"> Back to top</a></p>
+      <p>2022 Thunder Devs · <a href="#" class="linkf">Privacy</a> · <a href="#" class="linkf" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Terms</a></p>
+    </div>
+  </footer>
 
 
 
 
 
-<!-- FOOTER -->     
-<footer class="footer mt-auto py-3">         <div class="container">         
-    <p class="float-end">
-    <a href="#" id="linkf"> Back to top</a>
-    </p>         
-    <p>2022 Thunder Devs</p>         
-</div>     
-</footer>
 
 </html>
