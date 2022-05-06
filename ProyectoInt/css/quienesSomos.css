@@ -10,6 +10,7 @@ h2{
     color:black;
     font-weight:900;
     font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
+    text-align: center;
 }
 
 /* Estilo Navbar */
@@ -72,3 +73,127 @@ footer {
 .linkf{
     color: #ffeb3b;
 }
+
+/* CARDS EFFECTS */
+
+/* Estilo universal */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Contenedor de las cards */
+
+.container_cards{
+    max-width: 1200px;
+    margin: auto; /* Centrar el card */
+    margin-top: 100px; /*Margen de arriba */
+    min-height: 1200vh;
+    display: flex; /*Card de las imagenes flexibles, se coloque uno alado del otro */
+    flex-wrap: wrap; /*Para lo responsivo, cuando ya no quepa lo ponga abajo */
+    justify-content: center; /*Para centrar las cards */
+}
+
+/*Cards  */
+.cardmov{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+/*  */
+.cardmov:hover{
+    width: 350px;
+    height: 300px;
+}
+
+
+/* */
+.cardmov .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* card de las imagenes  */
+.cardmov .cover img{
+    width: 250px;   /*Tama;o de las imagenes */
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.8));
+    transition: 400ms;
+
+}
+
+.cardmov:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.cardmov .img_back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.cardmov:nth-of-type(1) .img_back{
+    background-image: url(../img/fondo.jpeg);
+
+}
+
+.cardmov:nth-of-type(2) .img_back1{
+    background-image: url(../img/fondo2.jpeg);
+
+}
+
+.cardmov:hover .img_back{
+    bottom: -40px;
+}
+
+ .cardmov .description{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+     margin-top: -10px;
+     padding: 20px;
+     border-radius: 0px 0px 20px 20px;
+     transition: all 300ms;
+ }
+
+ .cardmov:hover .description{
+     padding: 40px;
+     margin: auto;
+ }
+
+ .cardmov .description h2{
+     margin-top: 10px;
+ }
+
+ .cardmov .description p{
+     margin-top: 10px;
+ }
+ .cardmov .description input{
+     padding: 10px 40px;
+     margin-top: 20px;
+     border: none;
+     background:#9B46A0;
+     color: white;
+     font-size: 14px;
+     cursor: pointer;
+     border-radius: 8px;
+     transition: all 300ms;
+ }
+
+ .cardmov .description input:hover{
+     background: #E488FF;
+ }
