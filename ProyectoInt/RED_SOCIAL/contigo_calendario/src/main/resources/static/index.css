@@ -1,0 +1,19 @@
+
+/* Estilo Navbar */
+nav {
+    color:white;
+    background-color: #2A9D8F;
+}
+nav .bi{
+    color:white;
+}
+
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+}
+.linkf{
+    color: #ffeb3b;
+}

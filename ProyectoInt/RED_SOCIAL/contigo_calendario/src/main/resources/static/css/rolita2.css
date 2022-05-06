@@ -1,0 +1,185 @@
+/* Pagina de Frasesillas y Rolitas */
+
+/* Estilo para toda la página tipo de fuente y color */
+*{
+    font-family: "Patrick Hand"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px;
+}
+
+h1{
+    font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
+    font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
+    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        #12444e,
+        #47233a,
+        orangered);
+        background-size: 110vw;
+}
+h1 {
+    animation: sliding 100s linear infinite;
+  }
+  
+  @keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+  }
+  h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } 
+
+/* Estilo Navbar */
+nav {
+    background-color: #2A9D8F;
+}
+
+/* Estilo Navbar */
+nav {
+    background-color: #2A9D8F;
+}
+
+/* Estilo Background */
+
+body {
+    background-color: #9B46A0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%239B46A0'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+  /* Darker chat container */
+  .darker {
+    background-color: #ffffffc4;
+    float:right;
+  width: 100%;
+  border: 1px solid black ;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  }
+
+   /* Lighter chat container */
+   .lighter {
+    background-color: #ffffff8e;
+    float:right;
+  width: 100%;
+  border: 1px solid black ;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Input Mensaje */
+  #EscribirMensaje{
+      background-color: #ffffff;
+      float:right;
+      width: 100%;
+      border: 1px solid black ;
+      border-radius: 30px;
+      margin-bottom: 2rem;
+      min-height: 3rem;
+  }
+
+  input{
+    max-width: 20rem;
+  }
+
+  button{
+    float: right;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  /* Style images */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+/* Estilo del FOOTER */
+footer {
+  background-color: #279286;
+  height: 3rem;
+  color: white;
+}
+#linkf{
+  color: #ffeb3b;
+}
+
+div#TituloRolita{
+  float: right;
+  width: 50%;
+  height: 50px;
+  border-radius: 30px;
+}
+div#TituloFrase{
+  float:left;
+  width: 50%;
+  height: 50px;
+  border-radius: 30px;
+}
+
+div.fraseContainer{
+  border-radius: 15px;
+}
+
+div.rolitaContainer{
+  border-radius: 15px;
+}
+
+.divScroll_1 {
+overflow-y:scroll;
+width:100%;
+
+}
+
+.divScroll_2 {
+  overflow-y:scroll;
+  width:100%;
+  
+  }
+  
