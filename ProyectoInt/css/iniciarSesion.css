@@ -106,3 +106,19 @@ footer {
 .linkf{
     color: #ffeb3b;
 }
+
+/* IMAGEN DE LOGO EFECTOS  */
+.logoeffect{
+
+    transition: all 300ms;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.65));
+
+ }
+
+ .logoeffect:hover{
+    -webkit-animation:infinite;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+     overflow:visible;
+     filter: none;
+ }
