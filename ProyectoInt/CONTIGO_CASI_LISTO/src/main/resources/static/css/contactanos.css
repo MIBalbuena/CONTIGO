@@ -1,0 +1,206 @@
+/* Pagina de Contacto */
+
+/* Estilo para toda la página tipo de fuente */
+*{
+    color:black;
+    font-family: 'Fredoka', sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px;
+}
+
+h2{
+    color:black;
+    font-weight:900;
+    font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
+}
+
+/* Estilo Navbar */
+nav {
+    color:white;
+    background-color: #2A9D8F;
+}
+nav .bi{
+    color:white;
+}
+
+/* Estilo Background */
+body {
+   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); min-height: 100vh;
+}
+
+/* Estilo  Formulario*/
+#cardMensaje{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+/* Ocultar arrows en telefono */
+/* Chrome, Safari, Edge, Opera */
+#InputPhone::-webkit-outer-spin-button,
+#InputPhone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#InputPhone[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Estilo del botón de contáctanos */
+#botonContactanos{
+    text-decoration: none;
+    position: relative;
+    top: 3%;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: black;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#botonContactanos:hover{
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+
+#botonContactanos:before{
+content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: -1;
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 400%;
+ border-radius: 35px;
+ transition: 1s;
+}
+
+#botonContactanos:hover::before{
+    filter: blur(20px);
+}
+
+#botonContactanos:active{
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+
+/* Estilo apartado elementos informativos*/
+#telefono, #ubicacion, #correo{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+#telefono:hover, #ubicacion:hover, #correo:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #56f8e5, 12px -5px 15px 5px #58b3f8, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #56f8e5, 12px -5px 15px 5px #58b3f8, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#telefono:hover .colorIconos, #ubicacion:hover .colorIconos, #correo:hover .colorIconos{
+    color: #ffeb3b
+}
+
+#ubicacion{
+    cursor:pointer;
+}
+
+h5{
+    text-align: center;
+}
+
+/* Estilo ventana modal contacto */
+#ventanaModalContacto{
+border-radius: 15px;
+}
+
+/* Estilo mapa */
+#mapa{
+    border-radius: 15px;
+}
+
+/* Estilo del botón de página modal */
+#botonCloseModal{
+    position: relative;
+    top: 3%;
+    left: 90%;
+}
+
+#botonModal{
+    text-decoration: none;
+    position: relative;
+    top: 3%;
+    left: 37%;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: black;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#botonModal:hover{
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+
+#botonModal:before{
+    content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: -1;
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 400%;
+ border-radius: 35px;
+ transition: 1s;
+}
+
+#botonModal:hover::before{
+    filter: blur(20px);
+}
+
+#botonModal:active{
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+}
+.linkf{
+    color: #ffeb3b;
+}
