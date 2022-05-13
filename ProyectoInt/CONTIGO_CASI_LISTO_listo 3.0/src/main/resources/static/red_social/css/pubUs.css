@@ -1,0 +1,480 @@
+/* Pagina de Publicacion Usuario */
+
+/* Estilo para toda la página tipo de fuente y color */
+*{
+    color:black;
+    font-family: 'Fredoka', sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px;
+}
+
+h2{
+    color:black;
+    font-weight:900;
+    font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
+}
+
+/* Estilo Navbar */
+nav {
+    color:white;
+    background-color: #2A9D8F;
+}
+nav .bi{
+    color:white;
+}
+
+/* Estilo Background */
+body {
+   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); min-height: 100vh;
+}
+
+#cardPublic{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+#cardButons{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+}
+.linkf{
+    color: #ffeb3b;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*
+html, div, span, object, iframe,
+h1,  h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* RESET */
+/*
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #EEE;
+    text-align: center;
+    height:100%;
+    overflow-y: scroll;
+}*/
+/*
+header {
+    padding: 10px;
+    background: #FFF;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+    header p {
+        margin: 0;
+        text-align: center;
+        color: #333;
+        font-weight: bold;
+        display: inline-block;
+    }
+*/
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+textarea {
+    /*border: 10px solid #354b5e;*/
+    background: #f3ebbe;
+    border: 0;
+    /*border-radius: 5px;*/
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    outline: none;
+    /*font-style: italic;*/
+    margin-bottom: 0;
+    display: block;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .4s ease;
+    /*margin-bottom: 20px;*/
+}
+
+    .textarea-normal:focus {
+        /*border: 10px solid #cde2f4;*/
+        background: #ffffe6;
+    }
+
+    .textarea-error:focus {
+        /*border: 10px solid #f16767;*/
+        background: #ffffe6;
+    }
+
+    textarea::placeholder {
+        color: #CCC;
+    }
+
+
+
+h2 {
+    font-size: 20px;
+   /* color: #6da8db;*/
+}
+
+p {
+    color: #999;
+    text-align: left;
+    margin: 0 0 20px 0;
+    line-height: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-mood-selector {
+    /*background: #FFF;*/
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 3px #CCC;
+}
+
+.container-meter {
+    padding: 0 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+#moods {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    /*margin-bottom: 40px;*/
+}
+
+    #moods li {
+        border-radius: 100px;
+        display: inline-block;
+        margin-right: 50px;
+        
+        width: 60px;
+        height: 60px;
+        transition: all .4s ease;
+        cursor: pointer;
+    }
+
+        #moods li:hover {
+            -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #56f8e5, 12px -5px 15px 5px #58b3f8, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+            box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #56f8e5, 12px -5px 15px 5px #58b3f8, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+            /*border: 10px solid #EEE;*/
+            /*box-shadow: 0 0 40px #FFF;*/
+        }
+
+        #moods li:last-child {
+            margin-right: 0;
+        }
+
+    #entries {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+        
+        .entry {
+            margin-left: 0;
+            padding: 20px 20px 20px 60px;
+            /*border-radius: 5px;*/
+            text-align: left;
+            width: 100%;
+            background: #a1d0f9;
+            /*margin-bottom: 20px;*/
+            -moz-box-sizing: border-box; 
+            box-sizing: border-box;
+            /*box-shadow: 0 2px 3px #CCC;*/
+            border-bottom: 1px solid #FFF;
+            /*border: 1px solid #BBB;*/
+            /*transition: all .5s ease;*/
+        }    
+
+            .entry-animate {
+                animation: fade-in .50s ease-in;
+            }
+
+            .entry p {
+                color: #354b5e;
+                margin-bottom: 10px;
+            }
+
+            .entry:last-child {
+                border-bottom: 0;
+            }
+
+            .entry iframe {
+                width: 100%;
+                height: 300px;
+            }
+
+
+/*     @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }         */
+
+    #submit-diary {
+        text-align: center;
+    }    
+
+    .sad-entry { 
+        background: url(https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/white-frowning-face_2639.png) no-repeat 10px 50% #a1d0f9;
+        background-size: 40px 40px; 
+    }
+
+    .happy-entry { 
+        background: url(https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/slightly-smiling-face_1f642.png) no-repeat 10px 50% #fbea8a;
+        background-size: 40px 40px; 
+    }
+
+    .neutral-entry { 
+        background: url(https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/expressionless-face_1f611.png) no-repeat 10px 50% #e6d09b;
+        background-size: 40px 40px; 
+    }
+
+    .unsure-entry { 
+        background: url(https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/face-without-mouth_1f636.png) no-repeat 10px 50% #dedede;
+        background-size: 40px 40px; 
+    }
+
+    .timestamp {
+        font-size: 12px;
+        color: #666;
+        float: left;
+    }
+
+    .delete {
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        float: right;
+        color: #de3a04;
+        cursor: pointer;
+    }
+
+        .delete:hover {
+            font-weight: bold;
+        }
+
+    .favorite {
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        float: right;
+        margin-right: 20px;
+        color: #333;
+        cursor: pointer;
+    }    
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    #mood-meter {
+        width: 100%;
+        border-radius: 20px;
+        background: #FFF;
+        height: 30px;
+        padding: 0;
+        border: 5px solid #FFF;
+        -moz-box-sizing: border-box; 
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 0 3px #CCC;
+        margin-bottom: 20px;
+        white-space: nowrap;
+    }
+
+        .mood-meter-perc {
+            display: inline-block;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            white-space: normal;
+            transition: all .5s ease;
+        }
+
+        #meter-happy { width: 0%; background: #fbea8a; border-radius: 20px; }
+        #meter-neutral { width: 0%; background: #e6d09b; border-radius: 20px; }
+        #meter-sad { width: 0%; background: #a1d0f9; border-radius: 20px; }
+        #meter-unsure { width: 0%; background: #dedede; border-radius: 20px; }
+
+#mood-sorter {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}        
+
+    #mood-sorter li {
+        /*margin-right: 45px;*/
+        font-size: 12px;
+        list-style: none;
+        display: inline-block;
+        color: #333;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 20%;
+        border-right: 1px solid #CCC;
+        white-space: normal;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }  
+
+        #mood-sorter li:last-child {
+            margin-right: 0;
+            border-right: 0;
+        }  
+
+        #mood-sorter li:hover {
+            color: #6da8db;
+        }
+
+        #mood-sorter .sort-selected {
+            color: #6da8db;
+            padding-bottom: 5px;
+            border-bottom: 5px solid #6da8db;
+        }
+
+#empty-entries {
+    display: none;
+}        
+
+@media screen and (max-width: 430px) { 
+
+  #moods {
+    padding-left: 0;
+  }
+  
+  #moods li,
+  #moods li img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #moods li {
+    margin-right: 5px;
+  }
+
+  #mood-sorter li {
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  
+}           

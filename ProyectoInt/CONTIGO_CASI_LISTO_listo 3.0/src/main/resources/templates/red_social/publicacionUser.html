@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desahogate...</title>
-    <link rel="stylesheet" href="css/pubUs.css
-    ">
+    <link rel="stylesheet" href="css/pubUs.css">
+    <!--<link rel="stylesheet" href="css/stylemood.css">-->
     <!-- Links de Fuentes -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" />
@@ -38,11 +38,11 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/red_social/publicacionUser">Publique <i
                                             class="bi bi-pencil-square" style="font-size: 1.2rem;"></i></a></li>
-                                <li><a class="dropdown-item" href="/MiEmocion">Tu Emoción <i class="bi bi-postcard-heart"
+                                 <li><a class="dropdown-item" href="/MiEmocion">Tu Emoción <i class="bi bi-postcard-heart"
                                             style="font-size: 1.2rem;"></i></a></li>
-                                  <li><a class="dropdown-item" href="/calendar">Calendario <i class="bi bi-postcard-heart"
+                                              <li><a class="dropdown-item" href="/calendar">Calendario <i class="bi bi-postcard-heart"
                                             style="font-size: 1.2rem;"></i></a></li>
-                                <li><a class="dropdown-item disabled" href="#">Descubre <i class="bi bi-people"
+                                <li><a class="dropdown-item" href="/red_social/articulo">Descubre <i class="bi bi-people"
                                             style="font-size: 1.2rem;"></i></a></li>
                             </ul>
                         </li>
@@ -66,12 +66,16 @@
             </div>
         </nav>
     </header>
-    <br>
+    
     <main>
         <div class="container">
-            <div class="row">
+            <br> 
+            <div class="row" style="height: 40px;">
+                
                 <div class="col d-flex justify-content-center">
+                    <div class="row" style="height:40px;"></div>
                     <h1>Publica cómo te sientes</h1>
+                    <div class="row" style="height:80px;"></div>
                 </div>
             </div>
             <br>
@@ -81,16 +85,57 @@
                         <div class="card-body">
                             <div class="container">
                                 <form id="post">
-                                    <div class="row">
+                                    
                                         <div class="col d-flex justify-content-center">
+                                            <div class="row" style="height:40px;"></div>
                                             <h2>Publica algo</h2>
+                                            <div class="row" style="height:40px;"></div>
                                         </div>
                                         <hr>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <textarea class="form-control" id="texto" rows="6"
-                                                placeholder="Escribe algo aquí..."></textarea>
+                                            <div class="container">
+    
+                                                <header>
+                                                   
+                                                </header>
+                                            
+                                                <!-- Que pasa? Que piensas? -->
+                                                <textarea id="input-diary" class="textarea-normal" autofocus placeholder="Como te sientes?"></textarea>
+                                                
+                                            
+                                                <div class="container-mood-selector">
+                                                    
+                                            
+                                                    <ul id="moods">
+                                                        <li onclick="filtro()" id="mood-happy"><img src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/slightly-smiling-face_1f642.png" width="60" title="happy"></li>
+                                                        <li onclick="filtro()" id="mood-neutral"><img src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/expressionless-face_1f611.png" width="60" title="neutral"></li>
+                                                        <li onclick="filtro()" id="mood-sad"><img src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/white-frowning-face_2639.png" width="60" title="sad"></li>
+                                                        <li onclick="filtro()" id="mood-unsure"><img src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/129/face-without-mouth_1f636.png" width="60" title="unsure"></li>
+                                                    </ul>
+                                                </div>
+                                            
+                                                <div class="container-meter">
+                                            
+                                                    <div id="mood-meter">
+                                                        <div id="meter-happy" class="mood-meter-perc"></div><div id="meter-neutral" class="mood-meter-perc"></div><div id="meter-sad" class="mood-meter-perc"></div><div id="meter-unsure" class="mood-meter-perc"></div>
+                                                    </div>
+                                            
+                                                </div>    
+                                            
+                                                <ul id="mood-sorter">
+                                                    <li id="sort-all" class="sort-selected">Todas</li><li id="sort-happy">Feliz</li><li id="sort-neutral">Neutral</li><li id="sort-sad">Triste</li><li id="sort-unsure">Indeciso</li>
+                                                </ul>
+                                            
+                                                <p id="empty-entries" class="text-center">Aún no ingresas un mensaje. <br> Piensa en algo que haya pasado hoy!</p>
+                                            
+                                                <ul id="entries">
+                                                    
+                                                </ul>
+                                            
+                                            
+                                            </div>
                                         </div>
                                     </div>
                                     <br>
@@ -164,5 +209,8 @@
     <!-- Link palabras -->
     <script src="js/palabras.js"></script>
 </body>
+<script src="/RED_SOCIAL/js/moment.js"></script>
+<script src="/RED_SOCIAL/js/mood.js"></script>
+<script src="/RED_SOCIAL/js/palabras.js"></script>
 
 </html>

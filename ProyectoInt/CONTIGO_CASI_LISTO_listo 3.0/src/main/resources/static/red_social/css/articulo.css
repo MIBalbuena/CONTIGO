@@ -1,0 +1,163 @@
+
+/* Pagina de Inicio */
+
+*{
+    color:black;
+    font-family: 'Fredoka', sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color:black;
+    font-weight:900;
+    font-family: "Fredoka", sans-serif; font-style: normal; font-variant: normal; line-height: 30px;
+}
+
+/* Estilo Navbar */
+nav {
+    color:white;
+    background-color: #2A9D8F;
+}
+nav .bi{
+    color:white;
+}
+
+/* Estilo Background */
+body {
+   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); min-height: 100vh;
+}
+
+
+/* Estilo del FOOTER */
+footer {
+    background-color: #279286;
+    height: 3rem;
+    color: white;
+}
+.linkf{
+    color: #ffeb3b;
+} 
+/*------------------------------------------*-----------------------------------------------*/
+
+
+
+/*Galeria*/
+
+#c1 .galeria h1{
+    text-align: center;
+    margin: 0px 0 15px 0;
+    font-weight: 300;
+}
+#c1 .divisor{
+    border-top: 5px solid #279286;
+}
+#c1 .contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+#c1 .contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0, .75);
+}
+#c1 .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#c1 .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0, .75);
+    width: 100%;
+    height: 0;
+   /* transition: .5 ease;*/
+    overflow: hidden;  
+    transition: 1s ease;
+}
+
+#c1 .overlay h2{
+    color: #a6c1ee;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+#c1 .imagen:hover .overlay{
+    height: 100%;
+}
+
+/*----------------------------------------------------------*/
+/*Galeria 2*/
+
+ #c0 .galeria1 h1{
+    text-align: center;
+    margin: 0px 0 15px 0;
+    font-weight: 300;
+}
+ #c0 .divisor1{
+    border-top: 5px solid #279286;
+}
+ #c0 .contenedor-imagenes1{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+ #c0 .contenedor-imagenes1 .imagen1{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0, .75);
+}
+ #c0 .imagen1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+ #c0 .overlay1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0, .75);
+    width: 100%;
+    height: 0;
+   /* transition: .5 ease;*/
+    overflow: hidden;  
+    transition: 1s ease;
+}
+
+ #c0 .overlay1 h2{
+    color: #a6c1ee;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+ #c0 .imagen1:hover .overlay1{
+    height: 100%;
+}
