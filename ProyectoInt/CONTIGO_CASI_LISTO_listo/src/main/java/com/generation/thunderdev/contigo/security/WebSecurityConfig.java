@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     	.antMatchers("/js/**", "/css/**","/img/**").permitAll()
     	.antMatchers("/calendar").hasRole("USER")
     	.antMatchers("/red_social/**").hasRole("USER")
-    	.antMatchers("/registroEmocion/**").hasRole("USER")
+    	.antMatchers("/registroEmocion/**").hasRole("USER").antMatchers("/rest/**").hasRole("USER")
     	.and()
         .formLogin().loginPage("/login").failureUrl("/login-error")
         .and()

@@ -47,13 +47,7 @@ public class EmocionController {
 	 
 	}
 	
-	@RequestMapping("/index1")
-	public ModelAndView home() {
-		 ModelAndView modelAndView = new ModelAndView();
-		    modelAndView.setViewName("index1");
-		    return modelAndView;
-	 
-	}
+	
 	 
 	
 	
